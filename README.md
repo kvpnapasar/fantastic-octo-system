@@ -22,10 +22,15 @@ To ensure a premium and professional appearance, high-quality clinical photograp
    ```
 4. **Access the App**: Navigate to [http://localhost:3000](http://localhost:3000)
 
+## Deployment
+This project is configured for deployment on **Cloudflare Pages**. 
+- **CI/CD**: A GitHub Action (`.github/workflows/deploy.yml`) builds the application inside a Docker container (ensuring a consistent build environment) and deploys the static assets to Cloudflare Pages.
+
 ## Project Status
 - ✅ 70/70 Products Added
 - ✅ Custom WhatsApp Inquiry Scripts
 - ✅ Premium Responsive Design
-- ✅ Dockerized Deployment
+- ✅ Dockerized Build & Deployment
+- ✅ Cloudflare Pages Integration
 - ✅ GitHub Repository Synced
 
