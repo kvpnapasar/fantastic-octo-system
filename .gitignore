@@ -30,6 +30,3 @@ next-env.d.ts
 
 # Docker
 .dockerignore
-Dockerfile
-docker-compose.yml
-# Actually we want to commit these, so I'll remove them from here if they were here.
