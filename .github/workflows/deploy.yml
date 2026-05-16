@@ -7,21 +7,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build in Docker
-        # Using a Docker container to build the site as per user rule
+      - name: Build in Docker container
+        # Builds the Next.js static site inside Docker as per project rule
         run: |
-          docker build -t sahyadri-builder -f Dockerfile .
-          # Extract the build output from the container
-          # For Next.js on Cloudflare, we need the .vercel/output directory
-          # Note: Our root Dockerfile needs to be updated to produce this if we use next-on-pages
+          docker build --target builder -t sahyadri-builder -f Dockerfile .
           docker run --name builder sahyadri-builder /bin/true
-          docker cp builder:/app/frontend/.vercel/output ./output
+          docker cp builder:/app/frontend/out ./out
           docker rm builder
 
       - name: Deploy to Cloudflare Pages
@@ -30,5 +27,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: sahyadri-healthcare
-          directory: ./output
+          directory: ./out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
