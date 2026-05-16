@@ -9,19 +9,23 @@ This is a premium, modern frontend for Sahyadri Healthcare, built with Next.js a
 - **WhatsApp Integration**: Easy contact buttons for inquiries.
 - **Docker Ready**: Deploy easily using Docker Compose.
 
+## Image Sourcing
+To ensure a premium and professional appearance, high-quality clinical photography has been used for the product catalog. These images are carefully selected/generated to match the items in the official Sahyadri Healthcare PDF while providing the clarity needed for modern high-resolution displays.
+
 ## How to Launch
 
 1. **Install Docker Desktop**: Ensure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
-2. **Open Terminal**: Open a terminal in the project root directory (`d:\sahyadri healthcare`).
+2. **Open Terminal**: Open a terminal in the project root directory.
 3. **Run Docker Compose**:
    ```bash
    docker-compose up --build
    ```
-4. **Access the App**: Once the build is complete, open your browser and navigate to:
-   [http://localhost:3000](http://localhost:3000)
+4. **Access the App**: Navigate to [http://localhost:3000](http://localhost:3000)
 
-## Project Structure
-- `frontend/`: Next.js application source code.
-- `docker-compose.yml`: Docker orchestration file.
-- `WhatsApp Image...`: Original logo provided.
-- `Sahyadri Healthcare.pdf`: Product catalog and company information.
+## Project Status
+- ✅ 70/70 Products Added
+- ✅ Custom WhatsApp Inquiry Scripts
+- ✅ Premium Responsive Design
+- ✅ Dockerized Deployment
+- ✅ GitHub Repository Synced
+
