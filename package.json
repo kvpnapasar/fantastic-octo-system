@@ -18,7 +18,7 @@
   "devDependencies": {
     "eslint": "^9",
     "eslint-config-next": "^15.3.0",
-    "wrangler": "^3.107.0",
+    "wrangler": "^4.86.0",
     "@opennextjs/cloudflare": "^1.19.10"
   }
 }
