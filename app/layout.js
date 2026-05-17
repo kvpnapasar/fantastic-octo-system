@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <header className="navbar">
           <div className="container nav-content">
             <div className="logo">
-              <img src="/images/logo.jpg" alt="Sahyadri Healthcare Logo" style={{ height: '60px' }} />
+              <img src="/images/logo.webp" alt="Sahyadri Healthcare Logo" style={{ height: '60px' }} width="180" height="60" decoding="async" />
             </div>
             <nav>
               <ul className="nav-links">

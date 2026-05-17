@@ -6,82 +6,82 @@ export default function Home() {
 
   const products = [
     // MEDICAL DEVICES (8)
-    { id: 1, name: 'Patient Monitor', category: 'Medical Devices', image: '/images/monitor.png', details: 'Multi-para monitor for vital signs.', features: ['NIBP, SpO2, ECG', 'Alarm System'] },
-    { id: 2, name: 'ECG Machine', category: 'Medical Devices', image: '/images/ecg.png', details: 'Digital multi-channel ECG.', features: ['High-res printing', 'Digital display'] },
-    { id: 3, name: 'Syringe Pump', category: 'Medical Devices', image: '/images/syringe.png', details: 'Precision infusion pump.', features: ['Accurate delivery', 'Safety alarms'] },
-    { id: 4, name: 'O2 Concentrator', category: 'Medical Devices', image: '/images/o2.png', details: 'Medical grade oxygen supply.', features: ['5L/10L options', 'Steady flow'] },
-    { id: 5, name: 'Bipap Machine', category: 'Medical Devices', image: '/images/bipap.png', details: 'Respiratory support device.', features: ['Smart tracking', 'Silent mode'] },
-    { id: 6, name: 'NST Machine', category: 'Medical Devices', image: '/images/monitor.png', details: 'Non-stress test monitor.', features: ['Fetal monitoring', 'Reliable data'] },
-    { id: 7, name: 'Pulse Oximeter', category: 'Medical Devices', image: '/images/glucometer.png', details: 'Fingertip SpO2 monitor.', features: ['Fast reading', 'OLED display'] },
-    { id: 8, name: 'Cautery Machine', category: 'Medical Devices', image: '/images/devices.png', details: 'Electrosurgical unit.', features: ['Precision cutting', 'Safe operation'] },
+    { id: 1, name: 'Patient Monitor', category: 'Medical Devices', image: '/images/monitor.webp', details: 'Multi-para monitor for vital signs.', features: ['NIBP, SpO2, ECG', 'Alarm System'] },
+    { id: 2, name: 'ECG Machine', category: 'Medical Devices', image: '/images/ecg.webp', details: 'Digital multi-channel ECG.', features: ['High-res printing', 'Digital display'] },
+    { id: 3, name: 'Syringe Pump', category: 'Medical Devices', image: '/images/syringe.webp', details: 'Precision infusion pump.', features: ['Accurate delivery', 'Safety alarms'] },
+    { id: 4, name: 'O2 Concentrator', category: 'Medical Devices', image: '/images/o2.webp', details: 'Medical grade oxygen supply.', features: ['5L/10L options', 'Steady flow'] },
+    { id: 5, name: 'Bipap Machine', category: 'Medical Devices', image: '/images/bipap.webp', details: 'Respiratory support device.', features: ['Smart tracking', 'Silent mode'] },
+    { id: 6, name: 'NST Machine', category: 'Medical Devices', image: '/images/monitor.webp', details: 'Non-stress test monitor.', features: ['Fetal monitoring', 'Reliable data'] },
+    { id: 7, name: 'Pulse Oximeter', category: 'Medical Devices', image: '/images/glucometer.webp', details: 'Fingertip SpO2 monitor.', features: ['Fast reading', 'OLED display'] },
+    { id: 8, name: 'Cautery Machine', category: 'Medical Devices', image: '/images/devices.webp', details: 'Electrosurgical unit.', features: ['Precision cutting', 'Safe operation'] },
 
     // CONSUMABLES (32)
-    { id: 9, name: 'ECG Roll', category: 'Consumables', image: '/images/ecg_roll.png', details: 'Thermal paper for ECG.', features: ['Sensitive print', 'Long lasting'] },
-    { id: 10, name: 'ECG Gel', category: 'Consumables', image: '/images/ecg_roll.png', details: 'Conductive ultrasound gel.', features: ['Non-greasy', 'High conductivity'] },
-    { id: 11, name: 'ECG Clamp', category: 'Consumables', image: '/images/ecg_roll.png', details: 'Reusable limb clamps.', features: ['Secure fit', 'Standard size'] },
-    { id: 12, name: 'Chest Lead', category: 'Consumables', image: '/images/ecg_roll.png', details: 'ECG suction electrodes.', features: ['Strong suction', 'Reliable signal'] },
-    { id: 13, name: 'SpO2 Probe', category: 'Consumables', image: '/images/monitor.png', details: 'Reusable pulse ox probe.', features: ['Accurate SpO2', 'Soft silicone'] },
-    { id: 14, name: 'ECG Cable', category: 'Consumables', image: '/images/ecg.png', details: '10-lead ECG patient cable.', features: ['Shielded wire', 'Universal connector'] },
-    { id: 15, name: 'Temp Probe', category: 'Consumables', image: '/images/monitor.png', details: 'Body temperature sensor.', features: ['Fast response', 'Medical grade'] },
-    { id: 16, name: 'NIBP Cuff', category: 'Consumables', image: '/images/monitor.png', details: 'Blood pressure cuff.', features: ['All sizes', 'Durable Velcro'] },
-    { id: 17, name: 'Foot Switch', category: 'Consumables', image: '/images/devices.png', details: 'Heavy duty foot pedal.', features: ['Nonslip base', 'Long cable'] },
-    { id: 18, name: 'Cautery Pencil', category: 'Consumables', image: '/images/devices.png', details: 'Disposable ESU pencil.', features: ['Hand control', 'Sharp tip'] },
-    { id: 19, name: 'Bipolar Cable', category: 'Consumables', image: '/images/devices.png', details: 'Universal bipolar cord.', features: ['High insulation', 'Standard plug'] },
-    { id: 20, name: 'Monopolar Cable', category: 'Consumables', image: '/images/devices.png', details: 'ESU monopolar cable.', features: ['Flexible cord', 'Durable'] },
-    { id: 21, name: 'Oxygen Sensor', category: 'Consumables', image: '/images/gases.png', details: 'Respiratory O2 cell.', features: ['Fast response', 'Long life'] },
-    { id: 22, name: 'Flow Sensor Drager', category: 'Consumables', image: '/images/gases.png', details: 'Ventilator flow sensor.', features: ['Precision sensing', 'OEM compatible'] },
-    { id: 23, name: 'Bain Circuit', category: 'Consumables', image: '/images/gases.png', details: 'Anesthesia breathing circuit.', features: ['Low resistance', 'Transparent'] },
-    { id: 24, name: 'Ambu Bag', category: 'Consumables', image: '/images/gases.png', details: 'Resuscitation bag.', features: ['Silicone/PVC', 'Autoclavable'] },
-    { id: 25, name: 'Ventilator Circuit', category: 'Consumables', image: '/images/gases.png', details: 'Adult/Pediatric circuit.', features: ['Dual limb', 'Heated wire option'] },
-    { id: 26, name: 'Nasal Canula', category: 'Consumables', image: '/images/gases.png', details: 'Soft oxygen nasal tips.', features: ['Kink resistant', 'Comfortable'] },
-    { id: 27, name: 'Bipap Mask', category: 'Consumables', image: '/images/bipap.png', details: 'Full face/Nasal CPAP mask.', features: ['Leak proof', 'Soft cushion'] },
-    { id: 28, name: 'Nebulizer Mask', category: 'Consumables', image: '/images/o2.png', details: 'Medical aerosol mask.', features: ['Adjustable strap', 'Effective delivery'] },
-    { id: 29, name: 'Battery CP 612', category: 'Consumables', image: '/images/battery.png', details: 'Lead-acid medical battery.', features: ['6V 12Ah', 'Reliable power'] },
-    { id: 30, name: 'Battery C2023', category: 'Consumables', image: '/images/battery.png', details: 'Specialized medical battery.', features: ['High capacity', 'Long shelf life'] },
-    { id: 31, name: 'Standard Battery', category: 'Consumables', image: '/images/battery.png', details: 'Replacement device battery.', features: ['Safe charging', 'OEM quality'] },
-    { id: 32, name: 'Battery Philips', category: 'Consumables', image: '/images/battery.png', details: 'Philips monitor compatible.', features: ['Li-ion tech', 'Long runtime'] },
-    { id: 33, name: 'Laryngoscope', category: 'Consumables', image: '/images/stethoscope.png', details: 'Intubation tool set.', features: ['LED light', 'Stainless steel'] },
-    { id: 34, name: 'Stethoscope', category: 'Consumables', image: '/images/stethoscope.png', details: 'Acoustic diagnostic tool.', features: ['Clear sound', 'Dual head'] },
-    { id: 35, name: 'Doppler Probe', category: 'Consumables', image: '/images/monitor.png', details: 'Ultrasound fetal probe.', features: ['Waterproof', 'High sensitivity'] },
-    { id: 36, name: 'Glucometer', category: 'Consumables', image: '/images/glucometer.png', details: 'Blood sugar monitor.', features: ['Fast results', 'Digital'] },
-    { id: 37, name: 'Thermometer', category: 'Consumables', image: '/images/glucometer.png', details: 'Digital clinical thermometer.', features: ['Fast reading', 'Memory function'] },
-    { id: 38, name: 'Hygrometer', category: 'Consumables', image: '/images/glucometer.png', details: 'Digital humidity monitor.', features: ['Accurate sensing', 'Dual display'] },
-    { id: 39, name: 'Vein Tracker', category: 'Consumables', image: '/images/devices.png', details: 'Infrared vein finder.', features: ['Easy visualization', 'Portable'] },
-    { id: 40, name: 'Pulse Oximeter Pro', category: 'Consumables', image: '/images/glucometer.png', details: 'Advanced SpO2 sensor.', features: ['Graph display', 'USB sync'] },
+    { id: 9, name: 'ECG Roll', category: 'Consumables', image: '/images/ecg_roll.webp', details: 'Thermal paper for ECG.', features: ['Sensitive print', 'Long lasting'] },
+    { id: 10, name: 'ECG Gel', category: 'Consumables', image: '/images/ecg_roll.webp', details: 'Conductive ultrasound gel.', features: ['Non-greasy', 'High conductivity'] },
+    { id: 11, name: 'ECG Clamp', category: 'Consumables', image: '/images/ecg_roll.webp', details: 'Reusable limb clamps.', features: ['Secure fit', 'Standard size'] },
+    { id: 12, name: 'Chest Lead', category: 'Consumables', image: '/images/ecg_roll.webp', details: 'ECG suction electrodes.', features: ['Strong suction', 'Reliable signal'] },
+    { id: 13, name: 'SpO2 Probe', category: 'Consumables', image: '/images/monitor.webp', details: 'Reusable pulse ox probe.', features: ['Accurate SpO2', 'Soft silicone'] },
+    { id: 14, name: 'ECG Cable', category: 'Consumables', image: '/images/ecg.webp', details: '10-lead ECG patient cable.', features: ['Shielded wire', 'Universal connector'] },
+    { id: 15, name: 'Temp Probe', category: 'Consumables', image: '/images/monitor.webp', details: 'Body temperature sensor.', features: ['Fast response', 'Medical grade'] },
+    { id: 16, name: 'NIBP Cuff', category: 'Consumables', image: '/images/monitor.webp', details: 'Blood pressure cuff.', features: ['All sizes', 'Durable Velcro'] },
+    { id: 17, name: 'Foot Switch', category: 'Consumables', image: '/images/devices.webp', details: 'Heavy duty foot pedal.', features: ['Nonslip base', 'Long cable'] },
+    { id: 18, name: 'Cautery Pencil', category: 'Consumables', image: '/images/devices.webp', details: 'Disposable ESU pencil.', features: ['Hand control', 'Sharp tip'] },
+    { id: 19, name: 'Bipolar Cable', category: 'Consumables', image: '/images/devices.webp', details: 'Universal bipolar cord.', features: ['High insulation', 'Standard plug'] },
+    { id: 20, name: 'Monopolar Cable', category: 'Consumables', image: '/images/devices.webp', details: 'ESU monopolar cable.', features: ['Flexible cord', 'Durable'] },
+    { id: 21, name: 'Oxygen Sensor', category: 'Consumables', image: '/images/gases.webp', details: 'Respiratory O2 cell.', features: ['Fast response', 'Long life'] },
+    { id: 22, name: 'Flow Sensor Drager', category: 'Consumables', image: '/images/gases.webp', details: 'Ventilator flow sensor.', features: ['Precision sensing', 'OEM compatible'] },
+    { id: 23, name: 'Bain Circuit', category: 'Consumables', image: '/images/gases.webp', details: 'Anesthesia breathing circuit.', features: ['Low resistance', 'Transparent'] },
+    { id: 24, name: 'Ambu Bag', category: 'Consumables', image: '/images/gases.webp', details: 'Resuscitation bag.', features: ['Silicone/PVC', 'Autoclavable'] },
+    { id: 25, name: 'Ventilator Circuit', category: 'Consumables', image: '/images/gases.webp', details: 'Adult/Pediatric circuit.', features: ['Dual limb', 'Heated wire option'] },
+    { id: 26, name: 'Nasal Canula', category: 'Consumables', image: '/images/gases.webp', details: 'Soft oxygen nasal tips.', features: ['Kink resistant', 'Comfortable'] },
+    { id: 27, name: 'Bipap Mask', category: 'Consumables', image: '/images/bipap.webp', details: 'Full face/Nasal CPAP mask.', features: ['Leak proof', 'Soft cushion'] },
+    { id: 28, name: 'Nebulizer Mask', category: 'Consumables', image: '/images/o2.webp', details: 'Medical aerosol mask.', features: ['Adjustable strap', 'Effective delivery'] },
+    { id: 29, name: 'Battery CP 612', category: 'Consumables', image: '/images/battery.webp', details: 'Lead-acid medical battery.', features: ['6V 12Ah', 'Reliable power'] },
+    { id: 30, name: 'Battery C2023', category: 'Consumables', image: '/images/battery.webp', details: 'Specialized medical battery.', features: ['High capacity', 'Long shelf life'] },
+    { id: 31, name: 'Standard Battery', category: 'Consumables', image: '/images/battery.webp', details: 'Replacement device battery.', features: ['Safe charging', 'OEM quality'] },
+    { id: 32, name: 'Battery Philips', category: 'Consumables', image: '/images/battery.webp', details: 'Philips monitor compatible.', features: ['Li-ion tech', 'Long runtime'] },
+    { id: 33, name: 'Laryngoscope', category: 'Consumables', image: '/images/stethoscope.webp', details: 'Intubation tool set.', features: ['LED light', 'Stainless steel'] },
+    { id: 34, name: 'Stethoscope', category: 'Consumables', image: '/images/stethoscope.webp', details: 'Acoustic diagnostic tool.', features: ['Clear sound', 'Dual head'] },
+    { id: 35, name: 'Doppler Probe', category: 'Consumables', image: '/images/monitor.webp', details: 'Ultrasound fetal probe.', features: ['Waterproof', 'High sensitivity'] },
+    { id: 36, name: 'Glucometer', category: 'Consumables', image: '/images/glucometer.webp', details: 'Blood sugar monitor.', features: ['Fast results', 'Digital'] },
+    { id: 37, name: 'Thermometer', category: 'Consumables', image: '/images/glucometer.webp', details: 'Digital clinical thermometer.', features: ['Fast reading', 'Memory function'] },
+    { id: 38, name: 'Hygrometer', category: 'Consumables', image: '/images/glucometer.webp', details: 'Digital humidity monitor.', features: ['Accurate sensing', 'Dual display'] },
+    { id: 39, name: 'Vein Tracker', category: 'Consumables', image: '/images/devices.webp', details: 'Infrared vein finder.', features: ['Easy visualization', 'Portable'] },
+    { id: 40, name: 'Pulse Oximeter Pro', category: 'Consumables', image: '/images/glucometer.webp', details: 'Advanced SpO2 sensor.', features: ['Graph display', 'USB sync'] },
 
     // MEDICAL FURNITURE (18)
-    { id: 41, name: 'Electrical Bed', category: 'Medical Furniture', image: '/images/bed.png', details: 'Fully motorized patient bed.', features: ['Remote controlled', 'Multi-position'] },
-    { id: 42, name: 'Fowler Bed', category: 'Medical Furniture', image: '/images/bed.png', details: 'Manually adjustable bed.', features: ['Ergonomic', 'Robust build'] },
-    { id: 43, name: 'Stretcher Trolley', category: 'Medical Furniture', image: '/images/stretcher.png', details: 'Emergency transport trolley.', features: ['Smooth wheels', 'Hydraulic'] },
-    { id: 44, name: 'Bed Side Locker', category: 'Medical Furniture', image: '/images/trolley.png', details: 'Patient bedside storage.', features: ['Stainless steel', 'Lockable'] },
-    { id: 45, name: 'Cardiac Table', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Over-bed adjustable table.', features: ['Height adjust', 'Wooden top'] },
-    { id: 46, name: 'Crash Cart', category: 'Medical Furniture', image: '/images/trolley.png', details: 'Code blue emergency cart.', features: ['Central lock', 'Drawer dividers'] },
-    { id: 47, name: 'Dressing Trolley', category: 'Medical Furniture', image: '/images/trolley.png', details: 'Surgical dressing cart.', features: ['Washable', 'Shelf guards'] },
-    { id: 48, name: 'ECG Trolley', category: 'Medical Furniture', image: '/images/trolley.png', details: 'Mobile ECG machine stand.', features: ['Caster wheels', 'Compact'] },
-    { id: 49, name: 'Cylinder Trolley', category: 'Medical Furniture', image: '/images/trolley.png', details: 'Gas cylinder transporter.', features: ['Heavy duty', 'Safety chain'] },
-    { id: 50, name: 'Bed Screen', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Privacy hospital screen.', features: ['Foldable', 'Blue fabric'] },
-    { id: 51, name: 'Foot Step', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Patient step stool.', features: ['Nonslip mat', 'Single/Double'] },
-    { id: 52, name: 'OT Stool', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Operating theater stool.', features: ['Height adjust', 'Revolving'] },
-    { id: 53, name: 'Instrument Trolley', category: 'Medical Furniture', image: '/images/trolley.png', details: 'Multi-shelf instrument cart.', features: ['Mirror finish', 'Side rails'] },
-    { id: 54, name: 'Gynac Table', category: 'Medical Furniture', image: '/images/bed.png', details: 'Examination table set.', features: ['Leg holders', 'Adjustable'] },
-    { id: 55, name: 'Procedure Lamp', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Mobile examination light.', features: ['Bright LED', 'Flexible arm'] },
-    { id: 56, name: 'OT Dome Light', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Surgical ceiling light.', features: ['Shadowless', 'Focus adjust'] },
-    { id: 57, name: 'PhotoTherapy', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Jaundice treatment lamp.', features: ['Blue LED', 'Stand mount'] },
-    { id: 58, name: 'Monitor Stand', category: 'Medical Furniture', image: '/images/furniture.png', details: 'Wall/Desk monitor mount.', features: ['Tilt & Swivel', 'Solid steel'] },
+    { id: 41, name: 'Electrical Bed', category: 'Medical Furniture', image: '/images/bed.webp', details: 'Fully motorized patient bed.', features: ['Remote controlled', 'Multi-position'] },
+    { id: 42, name: 'Fowler Bed', category: 'Medical Furniture', image: '/images/bed.webp', details: 'Manually adjustable bed.', features: ['Ergonomic', 'Robust build'] },
+    { id: 43, name: 'Stretcher Trolley', category: 'Medical Furniture', image: '/images/stretcher.webp', details: 'Emergency transport trolley.', features: ['Smooth wheels', 'Hydraulic'] },
+    { id: 44, name: 'Bed Side Locker', category: 'Medical Furniture', image: '/images/trolley.webp', details: 'Patient bedside storage.', features: ['Stainless steel', 'Lockable'] },
+    { id: 45, name: 'Cardiac Table', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Over-bed adjustable table.', features: ['Height adjust', 'Wooden top'] },
+    { id: 46, name: 'Crash Cart', category: 'Medical Furniture', image: '/images/trolley.webp', details: 'Code blue emergency cart.', features: ['Central lock', 'Drawer dividers'] },
+    { id: 47, name: 'Dressing Trolley', category: 'Medical Furniture', image: '/images/trolley.webp', details: 'Surgical dressing cart.', features: ['Washable', 'Shelf guards'] },
+    { id: 48, name: 'ECG Trolley', category: 'Medical Furniture', image: '/images/trolley.webp', details: 'Mobile ECG machine stand.', features: ['Caster wheels', 'Compact'] },
+    { id: 49, name: 'Cylinder Trolley', category: 'Medical Furniture', image: '/images/trolley.webp', details: 'Gas cylinder transporter.', features: ['Heavy duty', 'Safety chain'] },
+    { id: 50, name: 'Bed Screen', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Privacy hospital screen.', features: ['Foldable', 'Blue fabric'] },
+    { id: 51, name: 'Foot Step', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Patient step stool.', features: ['Nonslip mat', 'Single/Double'] },
+    { id: 52, name: 'OT Stool', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Operating theater stool.', features: ['Height adjust', 'Revolving'] },
+    { id: 53, name: 'Instrument Trolley', category: 'Medical Furniture', image: '/images/trolley.webp', details: 'Multi-shelf instrument cart.', features: ['Mirror finish', 'Side rails'] },
+    { id: 54, name: 'Gynac Table', category: 'Medical Furniture', image: '/images/bed.webp', details: 'Examination table set.', features: ['Leg holders', 'Adjustable'] },
+    { id: 55, name: 'Procedure Lamp', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Mobile examination light.', features: ['Bright LED', 'Flexible arm'] },
+    { id: 56, name: 'OT Dome Light', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Surgical ceiling light.', features: ['Shadowless', 'Focus adjust'] },
+    { id: 57, name: 'PhotoTherapy', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Jaundice treatment lamp.', features: ['Blue LED', 'Stand mount'] },
+    { id: 58, name: 'Monitor Stand', category: 'Medical Furniture', image: '/images/furniture.webp', details: 'Wall/Desk monitor mount.', features: ['Tilt & Swivel', 'Solid steel'] },
 
     // MEDICAL GASES (12)
-    { id: 59, name: 'Oxygen Flowmeter', category: 'Medical Gases', image: '/images/regulator.png', details: 'Regulated O2 delivery.', features: ['Precise control', 'Back-pressure safe'] },
-    { id: 60, name: 'F.A. Valve', category: 'Medical Gases', image: '/images/regulator.png', details: 'Fine adjustment gas valve.', features: ['Durable brass', 'Easy turn'] },
-    { id: 61, name: 'Mox Regulator', category: 'Medical Gases', image: '/images/regulator.png', details: 'Single gauge gas regulator.', features: ['High pressure', 'Safety valve'] },
-    { id: 62, name: 'Double Flowmeter', category: 'Medical Gases', image: '/images/regulator.png', details: 'Dual outlet oxygen meter.', features: ['Independant control', 'Compact'] },
-    { id: 63, name: 'Suction Apparatus', category: 'Medical Gases', image: '/images/regulator.png', details: 'Wall suction unit.', features: ['Vac regulator', 'Safety jar'] },
-    { id: 64, name: 'Hose Pipes', category: 'Medical Gases', image: '/images/gases.png', details: 'Medical grade gas tubing.', features: ['Color coded', 'High pressure'] },
-    { id: 65, name: 'Probe', category: 'Medical Gases', image: '/images/gases.png', details: 'Gas outlet connector.', features: ['Self-sealing', 'Standard size'] },
-    { id: 66, name: 'Outlets', category: 'Medical Gases', image: '/images/gases.png', details: 'Wall gas terminal points.', features: ['Quick connect', 'Leak proof'] },
-    { id: 67, name: 'A-Type Regulator', category: 'Medical Gases', image: '/images/regulator.png', details: 'Standard gas regulator.', features: ['Single stage', 'Reliable'] },
-    { id: 68, name: 'Suction Trolley', category: 'Medical Gases', image: '/images/trolley.png', details: 'Mobile suction unit cart.', features: ['Double jars', 'Foot switch'] },
-    { id: 69, name: 'HFNC Unit', category: 'Medical Gases', image: '/images/gases.png', details: 'High flow nasal cannula.', features: ['Heated oxygen', 'Adjustable'] },
-    { id: 70, name: 'Suction Machine', category: 'Medical Gases', image: '/images/regulator.png', details: 'Portable suction pump.', features: ['Lightweight', 'Powerful vac'] }
+    { id: 59, name: 'Oxygen Flowmeter', category: 'Medical Gases', image: '/images/regulator.webp', details: 'Regulated O2 delivery.', features: ['Precise control', 'Back-pressure safe'] },
+    { id: 60, name: 'F.A. Valve', category: 'Medical Gases', image: '/images/regulator.webp', details: 'Fine adjustment gas valve.', features: ['Durable brass', 'Easy turn'] },
+    { id: 61, name: 'Mox Regulator', category: 'Medical Gases', image: '/images/regulator.webp', details: 'Single gauge gas regulator.', features: ['High pressure', 'Safety valve'] },
+    { id: 62, name: 'Double Flowmeter', category: 'Medical Gases', image: '/images/regulator.webp', details: 'Dual outlet oxygen meter.', features: ['Independant control', 'Compact'] },
+    { id: 63, name: 'Suction Apparatus', category: 'Medical Gases', image: '/images/regulator.webp', details: 'Wall suction unit.', features: ['Vac regulator', 'Safety jar'] },
+    { id: 64, name: 'Hose Pipes', category: 'Medical Gases', image: '/images/gases.webp', details: 'Medical grade gas tubing.', features: ['Color coded', 'High pressure'] },
+    { id: 65, name: 'Probe', category: 'Medical Gases', image: '/images/gases.webp', details: 'Gas outlet connector.', features: ['Self-sealing', 'Standard size'] },
+    { id: 66, name: 'Outlets', category: 'Medical Gases', image: '/images/gases.webp', details: 'Wall gas terminal points.', features: ['Quick connect', 'Leak proof'] },
+    { id: 67, name: 'A-Type Regulator', category: 'Medical Gases', image: '/images/regulator.webp', details: 'Standard gas regulator.', features: ['Single stage', 'Reliable'] },
+    { id: 68, name: 'Suction Trolley', category: 'Medical Gases', image: '/images/trolley.webp', details: 'Mobile suction unit cart.', features: ['Double jars', 'Foot switch'] },
+    { id: 69, name: 'HFNC Unit', category: 'Medical Gases', image: '/images/gases.webp', details: 'High flow nasal cannula.', features: ['Heated oxygen', 'Adjustable'] },
+    { id: 70, name: 'Suction Machine', category: 'Medical Gases', image: '/images/regulator.webp', details: 'Portable suction pump.', features: ['Lightweight', 'Powerful vac'] }
   ];
 
   const categories = ['All', 'Medical Devices', 'Medical Furniture', 'Consumables', 'Medical Gases'];
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-viz">
-            <img src="/images/hero.png" alt="Clinical Excellence" />
+            <img src="/images/hero.webp" alt="Clinical Excellence" decoding="async" fetchPriority="high" width="600" height="400" />
             <div className="stat-floating">
                <div className="stat-val">70+</div>
                <div className="stat-lbl">Premium Products</div>
@@ -143,7 +143,7 @@ export default function Home() {
             {filteredProducts.map((p) => (
               <div key={p.id} className="catalog-card fade-in">
                 <div className="card-img">
-                  <img src={p.image} alt={p.name} />
+                  <img src={p.image} alt={p.name} loading="lazy" decoding="async" width="300" height="200" style={{ objectFit: 'cover' }} />
                   <span className="card-tag">{p.category}</span>
                 </div>
                 <div className="card-body">
@@ -176,7 +176,7 @@ export default function Home() {
                <button onClick={() => handleInquiry('General Support')} className="btn btn-primary btn-xl" style={{marginTop: '30px'}}>Start Conversation</button>
             </div>
             <div className="contact-visual">
-               <img src="/images/devices.png" alt="Contact Us" />
+               <img src="/images/devices.webp" alt="Contact Us" loading="lazy" decoding="async" width="500" height="350" />
             </div>
          </div>
       </section>
